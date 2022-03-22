@@ -1,0 +1,40 @@
+*{
+    color: rgb(238, 213, 160);
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(245, 167, 116);
+}
+table{
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+    color:aliceblue red;
+}
+label{
+    display: inline-block;
+    color: rgb(17, 17, 20);
+    width: 120px;
+}
+div{
+    text-align: center;
+    background-color: rgb(238, 194, 164;
+    margin: auto;
+}
+.container{
+    background-color: rgb(197, 204, 211);
+    width: fit-content;
+    border: 2px solid black;
+    padding: 10px 10px 10px;
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+    color: rgb(7, 6, 6);
+}
+h2{
+    text-align: center;
+    color: rgb(5, 5, 5);
+}

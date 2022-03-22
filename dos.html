@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla de Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <script>
+        /**
+ * @param String name
+ * @return String
+ */
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+    </script>
+
+    <table>
+        <tr>
+            <td>NOMBRE</td>
+            <td>APELLIDO</td>
+            <td>TELEFONO</td>
+            <td>DIRECCION</td>
+            <td>SEXO</td>
+        </tr>
+        <tr>
+            <td>
+               <script>document.write(getParameterByName("NOMBRE"));</script>
+            </td>
+            <td>
+                <script>document.write(getParameterByName("APELLIDO"));</script>
+            </td>
+            <td>
+                <script>document.write(getParameterByName("TELEFONO"));</script>
+            </td>
+            <td>
+                <script>document.write(getParameterByName("DIRECCION"));</script>
+            </td>
+            <td>
+                <script>document.write(getParameterByName("SEXO"));</script>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
